@@ -3,7 +3,7 @@
 ## Branch Purpose
 
 The `develop` branch is the **main integration branch** for TaskFlow.  
-All completed features from frontend, backend, and deployment branches are merged here for **testing and validation** before releasing to `master`.
+All completed features from frontend, backend, and deployment branches are merged here for **testing and validation** before releasing to `main`.
 
 
 ## Scope
@@ -19,13 +19,13 @@ All completed features from frontend, backend, and deployment branches are merge
 
 - Frontend: HTML, CSS, JavaScript
 - Backend: API services
-- Deployment: Docker / CI-CD (planned)
+- Deployment: CI-CD , Vercel (planned)
 
 
 ## Workflow
 
 - Feature branches → `develop`
-- Stability testing → `master`
+- Stability testing → `main`
 - No direct feature development here
 
 
