@@ -3,7 +3,7 @@
 ## Group Information
 - W.H.C.D.J Karunanayaka -  ITBIN-2312-0021 - DevOps Engineer
 - U.K.R.R.P Ayuwardhana  -  ITBIN-2312-0020 - Frontend Developer
-- Nisanga Nethra Diwaman -  ITBIN-2312-0013 – Backend Developer
+- W.G.N.Nethra Diwaman -  ITBIN-2312-0013 – Backend Developer
  
 ## Project Description
 TaskFlow is a simple SaaS-style task management web application that allows users to add, view, and manage tasks through a clean dashboard interface.
