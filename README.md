@@ -19,7 +19,7 @@ All completed features from frontend, backend, and deployment branches are merge
 
 - Frontend: HTML, CSS, JavaScript
 - Backend: API services
-- Deployment: CI-CD , Vercel (planned)
+- Deployment: CI-CD , Vercel
 
 
 ## Workflow
