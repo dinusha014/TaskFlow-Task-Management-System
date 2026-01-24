@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TaskFlow | Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f4f6f8;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.login-container{
+  background:#fff;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  width:100%;
+  max-width:400px;
+  text-align:center;
+}
+
+.login-container h2{
+  margin-bottom:20px;
+  color:#1f2933;
+}
+
+.login-container input{
+  width:100%;
+  padding:12px 15px;
+  margin-bottom:20px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:16px;
+}
+
+.login-container button{
+  width:100%;
+  padding:14px;
+  background:#2563eb;
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.login-container button:hover{
+  background:#1e40af;
+}
+
+.login-container p{
+  margin-top:15px;
+  font-size:14px;
+  color:#555;
+}
+
+.login-container a{
+  color:#2563eb;
+  text-decoration:none;
+}
+
+.login-container a:hover{
+  text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+  <h2>Login to TaskFlow</h2>
+  <input type="text" placeholder="Username" id="username">
+  <input type="password" placeholder="Password" id="password">
+  <button onclick="login()">Login</button>
+  <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+</div>
+
+<script>
+function login(){
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // Simple frontend check (you can replace with backend later)
+  if(username && password){
+    alert("Login successful! Redirecting to dashboard...");
+    window.location.href = "dashboard.html";
+  } else {
+    alert("Please enter username and password");
+  }
+}
+</script>
+
+</body>
+</html>
+

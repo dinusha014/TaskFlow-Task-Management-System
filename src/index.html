@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TaskFlow | Smart Task Management</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#7df4f6;
+  color:#1f2933;
+}
+
+/* Navigation */
+nav{
+  background:#1f2933;
+  padding:16px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h2{
+  color:#ffffff;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+nav ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  font-size:15px;
+  padding:8px 12px;
+  border-radius:6px;
+}
+
+nav ul li a:hover{
+  background:#374151;
+}
+
+/* Hero Section */
+.hero{
+  padding:80px 40px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.hero-text h1{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.hero-text p{
+  font-size:18px;
+  color:#555;
+  margin-bottom:30px;
+}
+
+.hero-text button{
+  padding:14px 24px;
+  background:#2563eb;
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  transition: background 0.3s;
+}
+
+.hero-text button:hover{
+  background:#1e40af;
+}
+
+.hero-box{
+  background:#ffffff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Features */
+.features{
+  background:#ffffff;
+  padding:70px 40px;
+}
+
+.features h2{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.feature{
+  background:#f4f6f8;
+  padding:25px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.feature h3{
+  margin-bottom:10px;
+}
+
+/* Footer */
+footer{
+  background:#1f2933;
+  color:#ffffff;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+  <h2>TaskFlow</h2>
+  <ul>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="tasks.html">Tasks</a></li>
+    <li><a href="workflow.html">Workflow</a></li>
+    <li><a href="reports.html">Reports</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="settings.html">Settings</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Organize Work. Track Progress. Achieve More.</h1>
+    <p>
+      TaskFlow is a modern task and workflow management system designed to help
+      teams plan, track, and complete work efficiently.
+    </p>
+    <button onclick="goToLogin()">Get Started</button>
+  </div>
+
+  <div class="hero-box">
+    <h3>Why TaskFlow?</h3>
+    <p>✔ Simple task tracking</p>
+    <p>✔ Visual workflow management</p>
+    <p>✔ Team-friendly dashboard</p>
+    <p>✔ Cloud-ready deployment</p>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <h2>Core Features</h2>
+
+  <div class="feature-grid">
+    <div class="feature">
+      <h3>Task Management</h3>
+      <p>Create, update, and track tasks easily.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Workflow Board</h3>
+      <p>Visualize progress using workflow stages.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Reports</h3>
+      <p>Monitor task completion and productivity.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Team Collaboration</h3>
+      <p>Clear role-based workflow organization.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>TaskFlow © 2026 | Smart Task Management System</p>
+</footer>
+
+<script>
+function goToLogin(){
+  window.location.href = "login.html";
+}
+
+console.log("TaskFlow Home Page Loaded");
+</script>
+
+</body>
+</html>
