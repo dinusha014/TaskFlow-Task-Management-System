@@ -14,7 +14,7 @@ This includes preparing the application for hosting and automation.
 - CI/CD pipeline setup
 - Hosting preparation
 - Versioning strategy
-- 
+  
 
 ## Tools & Concepts
 
