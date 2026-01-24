@@ -88,16 +88,35 @@ body{
 </div>
 
 <script>
-function login(){
+async function login() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  // Simple frontend check (you can replace with backend later)
-  if(username && password){
-    alert("Login successful! Redirecting to dashboard...");
-    window.location.href = "dashboard.html";
-  } else {
+  if (!username || !password) {
     alert("Please enter username and password");
+    return;
+  }
+
+  try {
+    // Sending the data to the backend /login route
+    const response = await fetch('/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password })
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      alert(data.message);
+      // Use the redirect path sent by the backend
+      window.location.href = data.redirect; 
+    } else {
+      alert(data.message || "Login failed");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Could not connect to the server");
   }
 }
 </script>
