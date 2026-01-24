@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TaskFlow | Workflow</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f8;padding:20px}
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.column{background:#fff;padding:10px;border-radius:6px}
+.task{background:#e5e7eb;padding:8px;border-radius:4px;margin-bottom:6px}
+</style>
+</head>
+<body>
+
+<h1>Workflow Board</h1>
+
+<div class="board">
+  <div class="column"><h3>To Do</h3><div class="task">Plan UI</div></div>
+  <div class="column"><h3>In Progress</h3><div class="task">Frontend</div></div>
+  <div class="column"><h3>Review</h3></div>
+  <div class="column"><h3>Done</h3><div class="task">Repo Setup</div></div>
+</div>
+
+<script>
+console.log("Workflow board loaded");
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TaskFlow | Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* IMPORTANT: Force full height */
+html, body{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+/* Page Background */
+body{
+  font-family:Arial, sans-serif;
+  display:flex;
+  min-height:100vh;
+
+  background-image:
+    linear-gradient(
+      rgba(244, 246, 248, 0.286),
+      rgba(244, 246, 248, 0.249)
+    ),
+    url("dash.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sidebar */
+.sidebar{
+  width:220px;
+  background:#1f2933;
+  color:#ffffff;
+  padding:20px;
+}
+
+.sidebar h2{
+  margin-bottom:30px;
+}
+
+.sidebar ul{
+  list-style:none;
+  padding:0;
+}
+
+.sidebar li{
+  padding:12px;
+  border-radius:6px;
+  margin-bottom:6px;
+}
+
+.sidebar li a{
+  color:#ffffff;
+  text-decoration:none;
+  display:block;
+}
+
+.sidebar li.active,
+.sidebar li:hover{
+  background:#374151;
+}
+
+/* Main Content */
+.main{
+  flex:1;
+  padding:30px;
+}
+
+/* Cards */
+.card{
+  background:#ffffff;
+  padding:20px;
+  border-radius:8px;
+  margin-top:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <h2>TaskFlow</h2>
+  <ul>
+    <li class="active"><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="tasks.html">Tasks</a></li>
+    <li><a href="workflow.html">Workflow</a></li>
+    <li><a href="reports.html">Reports</a></li>
+    <li><a href="settings.html">Settings</a></li>
+  </ul>
+</aside>
+
+<!-- Main Content -->
+<div class="main">
+  <h1>Dashboard</h1>
+  <p>Overview of your workflow</p>
+
+  <div class="card">
+    Total Tasks: <strong>12</strong>
+  </div>
+
+  <div class="card">
+    Completed Tasks: <strong>5</strong>
+  </div>
+</div>
+
+<script>
+console.log("TaskFlow Dashboard loaded successfully");
+</script>
+
+</body>
+</html>
