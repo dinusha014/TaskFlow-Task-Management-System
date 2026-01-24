@@ -27,7 +27,7 @@ TaskFlow is a simple SaaS-style task management web application that allows user
 - feature/*: individual feature development
 
 ## Individual Contributions
-# U.K.R.R.P Ayuwardhana
+### U.K.R.R.P Ayuwardhana
   - Implemented frontend SaaS dashboard UI
   - Created responsive layout using HTML and CSS
   
