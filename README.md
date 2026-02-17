@@ -64,4 +64,20 @@ https://taskflow-red-three.vercel.app/
   - Repository initialisation and configuration
   - Merge conflict resolution
 
+ ## Prerequisites
+- Docker
+- Docker Compose
+
+## Build Application
+docker compose build
+
+## Run Application
+docker compose up
+
+## Stop Application
+docker compose down
+
+## Environment Variables
+Defined in .env file
+
 
